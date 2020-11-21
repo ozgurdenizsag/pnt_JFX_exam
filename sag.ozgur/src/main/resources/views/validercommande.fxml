@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="commandeRoot" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.ValiderCommande">
+
+    <top>
+        <Label fx:id="validerCommande" alignment="CENTER" prefHeight="85.0" prefWidth="365.0" text="Valider Commandes" textFill="RED" BorderPane.alignment="CENTER">
+            <font>
+                <Font size="30.0" />
+            </font>
+        </Label>
+    </top>
+    <center>
+        <ListView fx:id="listeCommandePrecommande" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+    </center>
+   <bottom>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#validerCommande" prefHeight="67.0" prefWidth="142.0" text="Valider" />
+            <Button mnemonicParsing="false" onAction="#retourAuMenu" prefHeight="67.0" prefWidth="128.0" text="Menu" />
+         </children>
+      </HBox>
+   </bottom>
+
+</BorderPane>
